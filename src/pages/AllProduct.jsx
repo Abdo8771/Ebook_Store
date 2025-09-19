@@ -122,57 +122,47 @@ export default function AllProduct() {
     }
   ];
    return (
-    <section
-      className="featured-books-section py-5 m-5"
-      style={{ paddingTop: "100px" }}
-    >
-   
-      <div className="container">
-        <div className="text-center mb-5">
-          <h2 className="fw-bold">ALL Books</h2>
-          <p className="text-muted">
-            What book was featured on the today show this week..!
-          </p>
-        </div>
+     <section
+       className="featured-books-section py-5 m-5"
+       style={{ paddingTop: "100px" }}
+     >
+       <div className="container">
+         <div className="text-center mb-5">
+           <h2 className="fw-bold">ALL Books</h2>
+           <p className="text-muted">
+             What book was featured on the today show this week..!
+           </p>
+         </div>
 
-        <div className="row justify-content-center">
-          {books.map(
-            (
-              book 
-            ) => (
-              <div className="col-12 col-md-3 mb-4" key={book.id}>
-                {" "}
-                <div className="card h-100 border-0 shadow-sm img-hover">
-                  <img
-                    src={book.img}
-                    className="card-img-top"
-                    alt={book.title}
-                  />
-                  <button className="fav position-absolute z-2">
-                    <i className="fa-solid fa-heart"></i>
-          
-                  </button>
-                  <div className="card-body text-center">
-                    <h6 className="card-title mb-1">{book.title}</h6>
-                    <p className="text-muted small mb-1">{book.author}</p>
-                    <p className="fw-bold mb-2">${book.price.toFixed(2)}</p>
-                    <button
-                      className="btn btn-outline-dark btn-sm"
-                      onClick={() => addToCart(book)}
-                    >
-                      Add to cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-            )
-          )}
-   
-        </div>
-        
-      </div>
-    </section>
-    
-    
-  );
+         <div className="row justify-content-center">
+           {books.map((book) => (
+             <div className="col-12 col-md-3 mb-4 img-hover rounded-2" key={book.id}>
+               
+               <div className="card h-100 border-0 shadow-sm ">
+                 <img
+                   src={book.img}
+                   className="card-img-top"
+                   alt={book.title}
+                 />
+                 <button className="fav position-absolute z-2">
+                   <i className="fa-solid fa-heart"></i>
+                 </button>
+                 <div className="card-body text-center">
+                   <h6 className="card-title mb-1">{book.title}</h6>
+                   <p className="text-muted small mb-1">{book.author}</p>
+                   <p className="fw-bold mb-2">${book.price.toFixed(2)}</p>
+                   <button
+                     className="btn btn-outline-dark btn-sm"
+                     onClick={() => addToCart(book)}
+                   >
+                     Add to cart
+                   </button>
+                 </div>
+               </div>
+             </div>
+           ))}
+         </div>
+       </div>
+     </section>
+   );
 }

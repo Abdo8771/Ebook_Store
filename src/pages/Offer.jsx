@@ -45,7 +45,7 @@ export default function Offer() {
 
         <div className="row justify-content-center">
           {books.map((book) => (
-            <div className="col-12 col-md-4 mb-4 img-hover" key={book.id}>
+            <div className="col-12 col-md-4 mb-4 img-hover rounded-2" key={book.id}>
               <div className="card h-100 border-0 text-center shadow-sm p-1">
                 <img
                   src={book.img}
