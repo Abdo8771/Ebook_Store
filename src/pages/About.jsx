@@ -1,5 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/about.css";
+import "../style/main.css";
+
 
 export default function About() {
   return (
@@ -22,9 +24,9 @@ export default function About() {
             <div className="row justify-content-center">
               
               <div className="col-12 col-md-4 mb-4">
-                <div className="card border-0 shadow-sm h-100 team-card">
+                <div className="card border-0 shadow-sm h-100 team-card img-hover">
                   <img
-                    src="src/images/shehab.jpg"
+                    src="/images/shehab.jpg"
                     alt="Shehab"
                     className="card-img-top rounded-circle p-3"
                   />
@@ -47,9 +49,9 @@ export default function About() {
               </div>
 
               <div className="col-12 col-md-4 mb-4">
-                <div className="card border-0 shadow-sm h-100 team-card">
+                <div className="card border-0 shadow-sm h-100 team-card img-hover">
                   <img
-                    src="src/images/abdelrhman.png"
+                    src="/images/abdelrhman.png"
                     alt="Abdelrahman"
                     className="card-img-top rounded-circle p-3"
                   />

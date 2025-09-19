@@ -1,5 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
+import "../style/main.css";
+
 import { useCart } from "./CartContext";
 
 export default function AllProduct() {
@@ -140,7 +142,7 @@ export default function AllProduct() {
             ) => (
               <div className="col-12 col-md-3 mb-4" key={book.id}>
                 {" "}
-                <div className="card h-100 border-0 shadow-sm">
+                <div className="card h-100 border-0 shadow-sm img-hover">
                   <img
                     src={book.img}
                     className="card-img-top"
