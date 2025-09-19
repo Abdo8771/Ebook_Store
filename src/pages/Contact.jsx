@@ -58,6 +58,19 @@ export default function Contact() {
                 placeholder="How can we help you?"
                 required
               ></textarea>
+              <a
+                href="https://wa.me/201008586672" // ضع رقمك هنا مع كود الدولة بدون +
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-success mt-3 d-inline-flex align-items-center"
+                style={{ gap: "8px" }}
+              >
+                <i
+                  className="bi bi-whatsapp"
+                  style={{ fontSize: "1.5rem" }}
+                ></i>
+                تواصل معنا على واتساب
+              </a>
             </div>
 
             <div className="text-center">

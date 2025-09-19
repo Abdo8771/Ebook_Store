@@ -49,7 +49,7 @@ export default function Books() {
 
         <div className="row justify-content-center">
           {books.map((book) => (
-            <div className="col-12 col-md-3 mb-4" key={book.id}>
+            <div className="col-12 col-md-3 mb-4 book-hover" key={book.id}>
               <div className="card h-100 border-0 shadow-sm">
                 <img src={book.img} className="card-img-top" alt={book.title} />
                 <button className="fav position-absolute z-2">
