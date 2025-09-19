@@ -28,8 +28,8 @@ export default function Home() {
 
         <div className="right-side d-flex align-items-center justify-content-center">
           <div className="laptops">
-            <img src="src/images/MacBook Pro 16.svg" className="laptop two" />
-            <img src="src/images/MacBook Pro 17.svg" className="laptop one" />
+            <img src="/images/MacBook Pro 16.svg" className="laptop two" />
+            <img src="/images/MacBook Pro 17.svg" className="laptop one" />
           </div>
         </div>
       </div>
