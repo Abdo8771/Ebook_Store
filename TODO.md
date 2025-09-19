@@ -1,0 +1,4 @@
+- [x] Add unique id to each book in AllProduct.jsx
+- [x] Import useCart hook in AllProduct.jsx
+- [x] Update Add to cart button onClick to call addToCart(book)
+- [x] Remove toast import and call from AllProduct.jsx

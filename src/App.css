@@ -1,0 +1,31 @@
+:root {
+  --cream: #f6f4e8;
+  --navy: #0c1626;
+  --muted: #6b6b6b;
+  --accent: #c7b98a;
+  --blue: #007bff;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: var(--cream);
+}
+.fav{
+  background-color: #dbdadadd;
+  right: 50px;
+  top: 38px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  i{
+    color: white;
+  }
+}
+.fav:hover i{
+  color: red;
+}

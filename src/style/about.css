@@ -1,0 +1,24 @@
+.about-section{
+    padding-top: 13vh;
+    padding-bottom: 10vh;
+    height: auto;
+}
+.team-card {
+  max-width: 280px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.team-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.fab{
+    transition: all .5s ease-in-out;
+}
+.fab:hover{
+    transform: scale(1.2) translateY(-5px);
+}
+
+

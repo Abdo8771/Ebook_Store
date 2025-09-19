@@ -1,0 +1,154 @@
+.home-split {
+  display: flex;
+  height: auto;
+  overflow: hidden;
+  padding-top: 12vh;
+}
+
+.left-side {
+  width: 50%;
+  background: var(--cream);
+  color: rgb(12, 12, 12);
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.right-side {
+  width: 50%;
+  background: var(--navy);
+  color: var(--cream);
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.branding {
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin: 0;
+  color: var(--navy);
+}
+
+.read-card {
+  display: inline-block;
+  background: #fff;
+  border-radius: 6px;
+  padding: 4px 10px;
+  width: 100px;
+}
+.read-main {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.8rem;
+}
+.read-sub {
+  color: var(--navy);
+  font-size: 0.75rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  color: #0f2130;
+}
+.desc {
+  color: #6b6b6b;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+.laptops {
+  position: relative;
+  width: 760px;
+  height: 440px;
+}
+.laptop {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+.laptop.two {
+  width: 720px;
+  z-index: 1;
+  position: relative;
+}
+.laptop.one {
+  position: absolute;
+  right: -40px;
+  bottom: -30px;
+  width: 520px;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .home-split {
+    flex-direction: column;
+    padding-top: 10vh;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .branding {
+    font-size: 2.2rem;
+  }
+
+  .read-card {
+    margin: 1rem auto;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+  .desc {
+    font-size: 0.95rem;
+    margin: 0 auto;
+  }
+
+  .laptops {
+    width: 100%;
+    height: auto;
+  }
+  .laptop.two {
+    width: 100%;
+  }
+  .laptop.one {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    margin: -40px auto 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 914px) {
+  .home-split {
+    padding-top: 6vh;
+  }
+  .branding {
+    font-size: 2.8rem;
+  }
+
+  .laptops {
+    width: 100%;
+    height: auto;
+  }
+
+  .laptop.two {
+    width: 95%;
+  }
+
+  .laptop.one {
+    width: 70%;
+    right: -10px;
+    bottom: -20px;
+  }
+}
