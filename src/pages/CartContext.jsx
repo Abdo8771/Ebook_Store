@@ -58,7 +58,6 @@ export function CartProvider({ children }) {
 
   // بيحذف كل المنتجات من السله
   const clearCart = () => {
-    toast.success("Cart cleared 🗑️");
     setCartItems([]);
   };
 
