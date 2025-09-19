@@ -12,28 +12,28 @@ export default function Books() {
       title: "Dead of Winter",
       author: "Darcy Coates",
       price: 40, 
-      img: "/src/images/Group 34250.svg",
+      img: "/images/Group 34250.svg",
     },
     {
       id: 2,
       title: "Fortune Favors the Healed",
       author: "Madeline Eve Pregulman",
       price: 25, 
-      img: "/src/images/Group 34231.svg",
+      img: "/images/Group 34231.svg",
     },
     {
       id: 3,
       title: "The Power of Crystals",
       author: "Juliet Madison",
       price: 25, 
-      img: "/src/images/Group 34234.svg",
+      img: "/images/Group 34234.svg",
     },
     {
       id: 4,
       title: "Bombmaker",
       author: "Daniel Davies",
       price: 25, 
-      img: "/src/images/Group 34235.svg",
+      img: "/images/Group 34235.svg",
     },
   ];
 
